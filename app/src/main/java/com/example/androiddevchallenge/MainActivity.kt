@@ -15,47 +15,110 @@
  */
 package com.example.androiddevchallenge
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Surface
+import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
+import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.unit.dp
+import com.example.androiddevchallenge.model.Models
+import com.example.androiddevchallenge.model.PuppyModel
 import com.example.androiddevchallenge.ui.theme.MyTheme
+import com.example.androiddevchallenge.ui.theme.SweetRed
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             MyTheme {
-                MyApp()
+                BodyContent(
+                    itemClickAction = { index -> launchDetailActivity(this, index) }
+                )
             }
         }
     }
 }
 
-// Start building your app here!
 @Composable
-fun MyApp() {
-    Surface(color = MaterialTheme.colors.background) {
-        Text(text = "Ready... Set... GO!")
+fun BodyContent(
+    itemClickAction: (Int) -> Unit,
+) {
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text("Adoption Place")
+                }
+            )
+        }
+    ) {
+        LazyColumn(
+            modifier = Modifier.padding(horizontal = 24.dp)
+        ) {
+            itemsIndexed(Models.getPuppyData()) { index, pet ->
+                ListItem(pet, index, itemClickAction)
+            }
+        }
     }
 }
 
-@Preview("Light Theme", widthDp = 360, heightDp = 640)
 @Composable
-fun LightPreview() {
-    MyTheme {
-        MyApp()
+fun ListItem(puppyModel: PuppyModel, index: Int, itemClickAction: (Int) -> Unit) {
+    val typography = MaterialTheme.typography
+    Card(
+        modifier = Modifier
+            .padding(top = 20.dp)
+            .clickable {
+                itemClickAction(index)
+            },
+        shape = RoundedCornerShape(6.dp),
+        elevation = 2.dp,
+    ) {
+        Column {
+            Image(
+                painterResource(id = puppyModel.image),
+                contentDescription = null,
+                modifier = Modifier
+                    .height(200.dp)
+                    .fillMaxWidth(),
+                contentScale = ContentScale.Crop
+            )
+            Text(
+                modifier = Modifier.padding(start = 8.dp),
+                text = puppyModel.name,
+                style = typography.h6,
+                color = SweetRed
+            )
+            Text(
+                modifier = Modifier.padding(start = 8.dp, bottom = 8.dp),
+                text = puppyModel.gender,
+                style = typography.body2
+            )
+        }
     }
 }
 
-@Preview("Dark Theme", widthDp = 360, heightDp = 640)
-@Composable
-fun DarkPreview() {
-    MyTheme(darkTheme = true) {
-        MyApp()
-    }
+fun launchDetailActivity(activity: AppCompatActivity, index: Int) {
+    activity.startActivity(
+        Intent(activity, DetailActivity::class.java).apply {
+            putExtra("index", index)
+        }
+    )
 }

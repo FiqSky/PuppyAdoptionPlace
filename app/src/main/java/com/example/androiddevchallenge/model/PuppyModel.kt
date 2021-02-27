@@ -35,56 +35,56 @@ data class PuppyModel(
 private val petList = listOf(
     PuppyModel(
         "Bea",
-        "Bea she's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend. Sed fringilla pulvinar tortor, vitae bibendum leo. Ut orci odio, porta et accumsan ac, lobortis vitae libero.",
+        "Bea she's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend.",
         "Female",
         "2",
         R.drawable.puppy1
     ),
     PuppyModel(
         "Carmen",
-        "Carmen he's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend. Sed fringilla pulvinar tortor, vitae bibendum leo. Ut orci odio, porta et accumsan ac, lobortis vitae libero.",
+        "Carmen he's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend.",
         "Male",
         "1",
         R.drawable.puppy2
     ),
     PuppyModel(
         "Jackie",
-        "Jackie he's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend. Sed fringilla pulvinar tortor, vitae bibendum leo. Ut orci odio, porta et accumsan ac, lobortis vitae libero.",
+        "Jackie he's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend.",
         "Male",
         "2",
         R.drawable.puppy3
     ),
     PuppyModel(
         "Dora",
-        "Dora she's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend. Sed fringilla pulvinar tortor, vitae bibendum leo. Ut orci odio, porta et accumsan ac, lobortis vitae libero.",
+        "Dora she's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend.",
         "Female",
         "1",
         R.drawable.puppy4
     ),
     PuppyModel(
         "Izzy",
-        "Izzy she's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend. Sed fringilla pulvinar tortor, vitae bibendum leo. Ut orci odio, porta et accumsan ac, lobortis vitae libero.",
+        "Izzy she's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend.",
         "Female",
         "1",
         R.drawable.puppy5
     ),
     PuppyModel(
         "Lassie",
-        "Lassie he's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend. Sed fringilla pulvinar tortor, vitae bibendum leo. Ut orci odio, porta et accumsan ac, lobortis vitae libero.",
+        "Lassie he's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend.",
         "Male",
         "1",
         R.drawable.puppy6
     ),
     PuppyModel(
         "Lacy",
-        "Lacy she's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend. Sed fringilla pulvinar tortor, vitae bibendum leo. Ut orci odio, porta et accumsan ac, lobortis vitae libero.",
+        "Lacy she's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend.",
         "Female",
         "2",
         R.drawable.puppy7
     ),
     PuppyModel(
         "Pearl",
-        "Pearl he's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend. Sed fringilla pulvinar tortor, vitae bibendum leo. Ut orci odio, porta et accumsan ac, lobortis vitae libero.",
+        "Pearl he's a smart puppy, Lorem ipsum dolor sit amet, consectetur adipiscing elit. In a rutrum dolor, sed vehicula felis. Etiam ultricies odio sit amet tortor interdum sollicitudin. Nam lobortis gravida augue, et gravida sem rhoncus sit amet. Donec iaculis, enim eget fringilla eleifend, augue dolor vehicula lacus, nec dictum dolor nibh at urna. Aliquam felis est, vestibulum sit amet neque quis, fringilla fermentum odio. In suscipit commodo metus at eleifend.",
         "Male",
         "1",
         R.drawable.puppy8
